@@ -1,0 +1,425 @@
+/* ALL */
+html {
+  font-family: helvetica;
+  font-size: 16px;
+  color: black;
+}
+
+/* HEADER */
+header {
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  left: 0;
+}
+
+header .company {
+  display: inline-flex;
+}
+
+.company .name {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.logo {
+  min-height: 2rem;
+  padding-right: 2rem;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.title h1 strong {
+  font-weight: 900;
+}
+
+.menu {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 30rem;
+}
+
+.menu ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 1rem;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.4s linear;
+}
+
+.menu ul li a:hover {
+  color: #FF7400;
+}
+
+.phone-header {
+  display: none;
+}
+
+/* CONTENT */
+
+.content {
+  z-index: 1;
+  padding-top: 7rem;
+}
+
+.articles, .works {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+/* CONTAINER */
+
+.container-left {
+  margin: 2rem auto;
+  max-width: 60%;
+}
+
+.container-left img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.container-left video {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.container-left h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.container-left p {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.container-left p:last-child {
+  font-style: italic;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  justify-content: center;
+  max-width: 40%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* BANNER */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  background-color: lightgrey;
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+.banner-text {
+  color: #262626;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+.banner-text h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.banner-text h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-top: 2rem;
+}
+
+.banner-buttom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  background-color: #262626;
+  font-size: 1.2rem;
+  margin: 0 2rem;
+  padding: 1rem;
+  width: 60%;
+  border-radius: 0.3rem;
+  transition: background-color 0.4s linear;
+}
+
+.banner-buttom:hover {
+  background-color: #FF7400;
+  font-weight: bold;
+}
+
+/* ARTICLES */
+
+.articles .container-right {
+  justify-content: flex-start;
+}
+
+.article-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: lightgrey;
+  margin: 0 0 2rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.4s linear;
+  height: 10rem;
+}
+
+.article-box:hover {
+  background-color: orange;
+  color: white;
+  filter: opacity(70%);
+}
+
+.article-box img {
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem ;
+}
+
+.article-box .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.article-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.article-box p {
+  font-size: 1rem;
+}
+
+.article-box span {
+  font-size: 1rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  color: white;
+  transition: all 0.4s linear;
+}
+
+.article-box span:hover {
+  font-size: 1.2rem;
+  color: darkred;
+}
+
+/* COURSES */
+
+.courses {
+  display: block;
+  flex-direction: column;
+  background-color: lightgrey;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem;
+  color: #262626;
+}
+
+.course-box {
+  display: block;
+  background-color: white;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.course-box a {
+  display: block;
+  background-color: none;
+  height: 100%;
+  border-radius: 0.5rem;
+  color: #262626;
+  transition: all 0.4s linear;
+}
+
+.course-box a:hover {
+  background-color: orange;
+  color: white;
+  filter: opacity(70%);
+}
+
+.course-box img {
+  border-radius: 0.5rem 0.5rem 0 0 ;
+  max-width: 100%;
+}
+
+.text {
+  padding: 1rem;
+  text-align: center;
+  min-height: 8rem;
+}
+
+.text h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+/* WORKS */
+
+.works .container-right {
+  justify-content: flex-start;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgrey;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  color: white;
+}
+
+footer .company {
+  align-self: center;
+}
+
+footer .menu {
+  min-width: 10rem;
+}
+
+footer .menu ul li a {
+  color: white;
+}
+
+
+/* MEDIA */
+@media only screen and (max-width: 640px) {
+  .container {
+    display: block;
+    max-width: 100%;
+  }
+  .course-box {
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+  .course-box {
+    max-width: 45%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  header {
+    position: static;
+    justify-content: center;
+  }
+  .phone-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .logo {
+    min-height: 2rem;
+    padding: 1rem;
+  }
+  .logo img {
+    height: 100%;
+  }
+  header .company {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .content {
+    padding-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-left {
+    margin: 0 auto;
+    min-width: 100%;
+    text-align: center;
+  }
+  .container-left img, .container-left video {
+    border-radius: 0;
+  }
+  .banner {
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0;
+  }
+  .container-right {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    min-width: 100%;
+    justify-content: center;
+  }
+  .article-box img {
+    display: none;
+    height: 0%;
+  }
+  .banner-buttom {
+    display: block;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 80%;
+  }
+  .article-box {
+    display: block;
+    justify-content: center;
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
